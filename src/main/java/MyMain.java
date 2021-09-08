@@ -1,17 +1,37 @@
+import java.util.Scanner;
+
 public class MyMain {
-    // Takes two Strings as input, and returns a String equal to the first half
-    // of the shorter String plus the second half of the longer String.
-    public static String halfAdder(String str1, String str2) {
+    // Write a method that asks the user to input a double between 0.0 and 1000000.0
+    // Your method should keep asking them until they type in a valid value
+    // The method returns the final double they type in
+
+    // scan.nextDouble() might be useful here
+    public static double inputDouble() {
+        Scanner scan = new Scanner(System.in);
         // REPLACE THIS WITH YOUR CODE
-        return "";
+
+        return -1.0;
     }
 
-    // Takes a String as input, and returns true if the String contains an 'A' or 'a'
-    // and returns false otherwise
-    public static boolean checkIfA(String str) {
+    // Takes a double money as input and returns the number of quarters that we
+    // can return in change
+    // You should use a while loop!
+    public static int numQuarters(double money) {
         // REPLACE THIS WITH YOUR CODE
-        return false;
+        return 0;
     }
+
+    // Takes a double money as input and returns the number of dimes that we
+    // can return in change
+    // You should use a while loop!
+    public static int numDimes(double money) {
+        // REPLACE THIS WITH YOUR CODE
+        return 0;
+    }
+
+
+
+
 
     //  Takes in two Strings as input and returns a String equal to those two Strings added
     //  together in alphabetic order.
@@ -21,26 +41,22 @@ public class MyMain {
 
 
     public static void main(String[] args) {
-        // Some code to test halfAdder
-        System.out.println("halfAdder tests:");
-        System.out.println(halfAdder("computer","science")); // sciuter
-        System.out.println(halfAdder("apple","fig")); // fple
-        System.out.println(halfAdder("banana","boat")); // boana
-        System.out.println(halfAdder("crablike","pineapple")); // crabapple
-        System.out.println(halfAdder("trombone", "hippie")); // hipbone
+        Scanner scan = new Scanner(System.in);
 
-        // Some code to test checkIfA
-        System.out.println("\ncheckIfA tests:");
-        System.out.println(checkIfA("asdf")); // true
-        System.out.println(checkIfA("bAnAnA")); // true
-        System.out.println(checkIfA("fig")); // false
+        // You should test inputDouble yourself!
+        double d = inputDouble();
 
-        // Some code to test stringOrder
-        System.out.println("\nstringOrder tests:");
-        System.out.println(stringOrder("apple", "banana")); // applebanana
-        System.out.println(stringOrder("banana", "apple")); // applebanana
-        System.out.println(stringOrder("cranberry", "banana")); // bananacranberry
-        System.out.println(stringOrder("apple", "Banana")); // appleBanana
-        System.out.println(stringOrder("Cranberry", "apple")); // appleCranberry
+        // Some code to test numQuarters
+        System.out.println("\nnumQuarters tests:");
+        System.out.println("1.25 in quarters would be: " + numQuarters(1.25) + " quarters.");
+        System.out.println("10.55 in quarters would be: " + numQuarters(10.55) + " quarters.");
+        System.out.println("1000000.20 in quarters would be: " + numQuarters(1000000.20) + " quarters.");
+
+        // Some code to test numDimes
+        System.out.println("1.20 in dimes would be: " + numDimes(1.20) + " dimes.");
+        System.out.println("120.13 in dimes would be: " + numDimes(120.13) + " dimes.");
+        System.out.println("150.25 in dimes would be: " + numDimes(150.25) + " dimes.");
+
+        scan.close();
     }
 }
