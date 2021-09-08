@@ -48,15 +48,15 @@ public class MyMain {
 
         // Some code to test numQuarters
         System.out.println("\nnumQuarters tests:");
-        System.out.println("1.25 in quarters would be: " + numQuarters(1.25) + " quarters.");
-        System.out.println("10.55 in quarters would be: " + numQuarters(10.55) + " quarters.");
-        System.out.println("1000000.20 in quarters would be: " + numQuarters(1000000.20) + " quarters.");
+        System.out.println("1.25 in quarters would be: " + numQuarters(1.25) + " quarters."); // 5
+        System.out.println("10.55 in quarters would be: " + numQuarters(10.55) + " quarters."); // 42
+        System.out.println("1000000.20 in quarters would be: " + numQuarters(1000000.20) + " quarters."); //4000000
 
         // Some code to test numDimes
         System.out.println("\nnumDimes tests:");
-        System.out.println("1.20 in dimes would be: " + numDimes(1.20) + " dimes.");
-        System.out.println("120.13 in dimes would be: " + numDimes(120.13) + " dimes.");
-        System.out.println("150.25 in dimes would be: " + numDimes(150.25) + " dimes.");
+        System.out.println("1.20 in dimes would be: " + numDimes(1.20) + " dimes."); // 12
+        System.out.println("120.13 in dimes would be: " + numDimes(120.13) + " dimes."); //1201
+        System.out.println("150.25 in dimes would be: " + numDimes(150.25) + " dimes."); //1502
 
         scan.close();
     }
