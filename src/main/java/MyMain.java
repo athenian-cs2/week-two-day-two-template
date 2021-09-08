@@ -29,16 +29,21 @@ public class MyMain {
         return 0;
     }
 
-
-
-
-
-    //  Takes in two Strings as input and returns a String equal to those two Strings added
-    //  together in alphabetic order.
-    public static String stringOrder(String str1, String str2) {
-        return "";
+    // Takes a double money as input and returns the number of nickels that we
+    // can return in change
+    // You should use a while loop!
+    public static int numNickels(double money) {
+        // REPLACE THIS WITH YOUR CODE
+        return 0;
     }
 
+    // Takes a double money as input and returns the number of pennies that we
+    // can return in change
+    // You should use a while loop!
+    public static int numPennies(double money) {
+        // REPLACE THIS WITH YOUR CODE
+        return 0;
+    }
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
