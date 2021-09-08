@@ -53,6 +53,7 @@ public class MyMain {
         System.out.println("1000000.20 in quarters would be: " + numQuarters(1000000.20) + " quarters.");
 
         // Some code to test numDimes
+        System.out.println("\nnumDimes tests:");
         System.out.println("1.20 in dimes would be: " + numDimes(1.20) + " dimes.");
         System.out.println("120.13 in dimes would be: " + numDimes(120.13) + " dimes.");
         System.out.println("150.25 in dimes would be: " + numDimes(150.25) + " dimes.");
